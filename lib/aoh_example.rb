@@ -10,7 +10,7 @@ def assembled_aoh
   # Build an array that contains (or, "nests") the constants into a single
   # Array. Ruby constants are denoted by ALL_CAPS
   
-  Array=[{:name "john", :job "nurse"},
+  ARRAY =[{:name "john", :job "nurse"},
   {:name"peter", :job "painter"},
   {:name "sophia", :job "makeup artist"}
   ]
@@ -19,6 +19,12 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
+  ARRAY=[{:name "john", :job "nurse"},
+  {:name"peter", :job "painter"},
+  {:name "sophia", :job "makeup artist"}
+  ]
+  ARRAY[0][1]
+  
 end
 
 def aoh_lookup(aoh, row, key)
