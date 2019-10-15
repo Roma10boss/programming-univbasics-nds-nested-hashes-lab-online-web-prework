@@ -23,14 +23,25 @@ def literal_aoh
   {:name"peter", :job "painter"},
   {:name "sophia", :job "makeup artist"}
   ]
-  ARRAY[0][1]
+  ARRAY[0]
   
 end
 
 def aoh_lookup(aoh, row, key)
+  ARRAY=[{:name "john", :job "nurse"},
+  {:name"peter", :job "painter"},
+  {:name "sophia", :job "makeup artist"}
+  ]
+  ARRAY[1][1]
 end
 
 def aoh_update(aoh, row, key, new_value)
   # Update the AoH data at row and key to have the value of new_value
   # Return the updated AoH
+  ARRAY=[{:name "john", :job "nurse"},
+  {:name"peter", :job "painter"},
+  {:name "sophia", :job "makeup artist"}
+  ]
+  ARRAY[1][:name] = "Paul"
+  ARRAY[1][:job] = "entrepreneur"
 end
